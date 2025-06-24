@@ -1,0 +1,82 @@
+
+header h1{
+    font-size: 50px;
+}
+
+$sections_background_color: lightcyan;
+section{
+    padding: 10px;
+    background-color: $sections_background_color;
+}
+
+#fonts{
+    .smalls{font-size: small;}
+    .larges{font-size: large;}
+}
+
+$boxs_margin: 50px 0;
+$hover_color: black;
+#boxs{
+    height: 500px;
+    margin: $boxs_margin;
+    display: flex;
+    > div{
+        width: 50%;
+        color: orange;
+        transition-duration: 0.5s;
+        .small_box{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            margin: $boxs_margin;
+            &:hover{
+                background-color: $hover_color;
+            }
+        }
+        .large_box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: $boxs_margin;
+            &:hover{
+                background-color: $hover_color;
+            }
+        }
+        &::before{
+            content: 'box_section:';
+        }
+        &:hover{
+            background-color: brown;
+        }
+    }
+    div{
+        transition-duration: 0.5s;
+    }
+}
+
+@mixin box_multiple_size($w, $h){
+    width: $w;
+    height: $h;
+}
+@function double($v){
+    @return $v * 2;
+
+}
+@function triple($v){
+    @return $v * 3;
+}
+#box_multiple{
+    > div{
+        background-color: lightpink;
+        margin: $boxs_margin;
+    }
+    .basic{
+        @include box_multiple_size(50px, 50px);
+    }
+    .double{
+        @include box_multiple_size(double(50px), 50px);
+    }
+    .triple{
+        @include box_multiple_size(triple(50px), 50px);
+    }
+}

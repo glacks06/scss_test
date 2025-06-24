@@ -1,3 +1,72 @@
+header h1 {
+  font-size: 50px;
+}
 
+section {
+  padding: 10px;
+  background-color: lightcyan;
+}
+
+#fonts .smalls {
+  font-size: small;
+}
+#fonts .larges {
+  font-size: large;
+}
+
+#boxs {
+  height: 500px;
+  margin: 50px 0;
+  display: flex;
+}
+#boxs > div {
+  width: 50%;
+  color: orange;
+  transition-duration: 0.5s;
+}
+#boxs > div .small_box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 50px 0;
+}
+#boxs > div .small_box:hover {
+  background-color: black;
+}
+#boxs > div .large_box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 50px 0;
+}
+#boxs > div .large_box:hover {
+  background-color: black;
+}
+#boxs > div::before {
+  content: "box_section:";
+}
+#boxs > div:hover {
+  background-color: brown;
+}
+#boxs div {
+  transition-duration: 0.5s;
+}
+
+#box_multiple > div {
+  background-color: lightpink;
+  margin: 50px 0;
+}
+#box_multiple .basic {
+  width: 50px;
+  height: 50px;
+}
+#box_multiple .double {
+  width: 100px;
+  height: 50px;
+}
+#box_multiple .triple {
+  width: 150px;
+  height: 50px;
+}
 
 /*# sourceMappingURL=main.css.map */
