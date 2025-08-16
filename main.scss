@@ -1,4 +1,5 @@
-
+@use "sass:meta";
+@use "./constant/variables" as con;
 header h1{
     font-size: 50px;
 }
@@ -79,4 +80,21 @@ $hover_color: black;
     .triple{
         @include box_multiple_size(triple(50px), 50px);
     }
+}
+
+// @use "sass:meta";
+@function add300($size){
+  @return $size + 300px;
+}
+@function sum3($params...){
+    $res: 0;
+    @each $val in $params{
+        $res: $res + $val;
+    }
+    @return $res;
+}
+.box_function {
+  width: add300(100px);
+  height: 400px;
+  background-color: con.$v-b;
 }

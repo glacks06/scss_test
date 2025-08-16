@@ -69,4 +69,8 @@ section {
   height: 50px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.box_function {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */
