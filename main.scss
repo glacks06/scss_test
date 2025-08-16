@@ -98,3 +98,18 @@ $hover_color: black;
   height: 400px;
   background-color: con.$v-b;
 }
+
+
+.box_global{
+    $box_global_bc_color: violet !global;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: $box_global_bc_color;
+}
+.box_gloval_2{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: $box_global_bc_color;
+}

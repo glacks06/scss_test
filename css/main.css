@@ -73,4 +73,18 @@ section {
   width: 400px;
   height: 400px;
   background-color: blue;
+}
+
+.box_global {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+}
+
+.box_gloval_2 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: violet;
 }/*# sourceMappingURL=main.css.map */
