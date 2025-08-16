@@ -87,4 +87,13 @@ section {
   width: 100px;
   height: 100px;
   background-color: violet;
+}
+
+.mixin_test .box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  top: 50px;
+  left: 50px;
 }/*# sourceMappingURL=main.css.map */

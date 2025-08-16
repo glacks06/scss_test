@@ -113,3 +113,9 @@ $hover_color: black;
     height: 100px;
     background-color: $box_global_bc_color;
 }
+
+.mixin_test{
+    .box{
+        @include con.test-box-minxin($t: 50px, $l: 50px);
+    }
+}
