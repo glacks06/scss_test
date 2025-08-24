@@ -119,3 +119,20 @@ $hover_color: black;
         @include con.test-box-minxin($t: 50px, $l: 50px);
     }
 }
+
+.nest_test{
+    $nest_test_box_color: aqua;
+    margin: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    .nest_test_box{
+        width: 100px;
+        height: 100px;
+        background-color: $nest_test_box_color;
+    }
+}
+
+// .nest_test .nest_test_box{
+//     // background-color: $nest_test_box_color; // 접근 불가(undefined variable)
+// }
